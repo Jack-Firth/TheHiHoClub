@@ -1,0 +1,16 @@
+The Hi-Ho Club
+    1. Website
+        - About us
+            - Multi-page scroll site: Pizzeria, Stairs Descending, Hi-Ho Club
+        - Reservations/Menus etc.
+        - Membership System
+            - Requires Name Generator
+                - AI Trained FaceID?
+    2. On-Site
+        - Swipe Card/FaceID to enter?
+            - Basic Arduino setup
+            - Log entries
+        - Tills?
+    3. App
+        - Mobile optimised version of website
+        - NFS output for entry?
