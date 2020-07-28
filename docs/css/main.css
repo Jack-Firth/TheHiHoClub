@@ -1,0 +1,20 @@
+body {
+  background-image: url("../assets/background_image.jpg"); }
+
+.signup-container {
+  max-width: 960px;
+  border-radius: 20px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  padding: 40px;
+  color: #ffffff;
+  margin-top: 200px;
+  backdrop-filter: blur(8px);
+  text-align: center; }
+
+.singup-logo {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+/*# sourceMappingURL=main.css.map */
