@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 body {
-  background-image: url("../assets/background_image.jpg"); }
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/background_image.jpg"); }
 
 .signup-container {
   max-width: 960px;
@@ -19,18 +21,49 @@ body {
 
 .signup-title {
   margin-top: 5rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 2rem; }
 
 .signup-description {
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  font-size: 1.25rem;
+  font-family: "Caveat", cursive; }
 
 .btn-primary {
-  background-color: #32000a;
+  background-color: #ffffff;
+  color: #32000a;
+  font: bolder;
   border: none; }
+  .btn-primary:hover {
+    background-color: #ffd700;
+    color: #32000a; }
 
 .form-control {
   background-color: #1b1b1b;
   border: none;
-  text-color: #ffffff; }
+  text-color: #ffffff;
+  font-family: "Caveat", cursive; }
+
+.consent-box {
+  margin-right: 1rem; }
+
+.consent-message {
+  font-family: "Caveat", cursive; }
+
+.links-wrapper {
+  margin: auto;
+  max-width: 20%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25rem; }
+
+.social-link {
+  color: #ffffff;
+  text-decoration: none; }
+  .social-link:hover {
+    color: #ffd700;
+    transition: ease-in-out, 0.2s; }
 
 /*# sourceMappingURL=main.css.map */

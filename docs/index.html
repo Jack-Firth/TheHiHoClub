@@ -15,6 +15,10 @@
     />
     <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/5c12cb9a7c.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -65,15 +69,54 @@
                     />
                   </div>
                   <div class="form-group">
+                    <input
+                      class="consent-box"
+                      type="checkbox"
+                      id="confirmation"
+                      name="confirmation"
+                      value="True"
+                      required
+                    />
+                    <label for="confirmation" class="consent-message">
+                      I consent to join the Hi Ho Club mailing list</label
+                    ><br />
+                  </div>
+                  <div class="form-group">
                     <button
                       type="submit"
                       onclick="sendMessage()"
                       class="btn btn-primary"
                     >
-                      Join us
+                      Become a Member
                     </button>
                   </div>
                 </form>
+                <div class="row">
+                  <div class="col">
+                    <div class="links-wrapper">
+                      <div class="insta-wrapper">
+                        <a
+                          class="social-link"
+                          href="https://www.instagram.com/thehihoclub"
+                          target="_blank"
+                          ><i class="fa fa-instagram" aria-hidden="true"></i
+                        ></a>
+                      </div>
+                      <div class="facebook-wrapper">
+                        <a
+                          class="social-link"
+                          href="https://www.facebook.com/thehihoclub"
+                          target="_blank"
+                        >
+                          <i
+                            class="fa fa-facebook-square"
+                            aria-hidden="true"
+                          ></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

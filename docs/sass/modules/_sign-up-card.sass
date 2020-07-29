@@ -17,15 +17,46 @@
 .signup-title
     margin-top: 5rem
     margin-bottom: 2rem
-    
+    font-family: $font-family-hiho
+    font-size: $font-xlg
+
 .signup-description
     margin-bottom: 3rem
+    font-size: $font-large
+    font-family: $font-family-hiho-2
 
 .btn-primary
-    background-color: $primary-dark
+    background-color: $white
+    color: $primary-dark
+    font: bolder
     border: none
+    &:hover
+        background-color: $highlight-gold
+        color: $primary-dark
 
 .form-control
-    background-color: $primary-grey
+    background-color: $btn-hiho
     border: none
     text-color: $white
+    font-family: $font-family-hiho-2
+
+.consent-box
+    margin-right: 1rem
+
+.consent-message
+    font-family: $font-family-hiho-2
+    
+.links-wrapper
+    margin: auto
+    max-width: 20%
+    margin-top: 1rem
+    display: flex
+    justify-content: space-between
+    font-size: $font-large
+
+.social-link
+    color: $white
+    text-decoration: none
+    &:hover
+        color: $highlight-gold
+        transition: ease-in-out, 0.2s
