@@ -7,28 +7,55 @@ body {
   max-width: 960px;
   border-radius: 20px;
   margin: auto;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
   box-sizing: border-box;
   padding: 40px;
   color: #ffffff;
-  margin-top: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   backdrop-filter: blur(8px);
   text-align: center;
   justify-content: center; }
 
 .singup-logo {
-  max-width: 80%; }
+  max-width: 60%; }
 
 .signup-title {
-  margin-top: 5rem;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
   font-family: "Yanone Kaffeesatz", sans-serif;
-  font-size: 2rem; }
+  font-size: 3rem; }
 
-.signup-description {
-  margin-bottom: 3rem;
+.col-5 {
+  justify-content: center; }
+
+.small-logo-section {
+  display: flex;
+  justify-content: center; }
+  @media (max-width: 550px) {
+    .small-logo-section {
+      flex-direction: column; } }
+
+.row {
+  display: flex; }
+  @media (max-width: 550px) {
+    .row {
+      flex-direction: column;
+      display: inline-block;
+      text-align: -webkit-center; } }
+
+.small-logo {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: auto; }
+
+.description {
+  margin-bottom: 1rem;
   font-size: 1.25rem;
   font-family: "Caveat", cursive; }
+
+.newsletter-form {
+  margin-top: 1rem; }
 
 .btn-primary {
   background-color: #ffffff;
@@ -43,7 +70,9 @@ body {
   background-color: #1b1b1b;
   border: none;
   text-color: #ffffff;
-  font-family: "Caveat", cursive; }
+  font-family: "Caveat", cursive;
+  max-width: 50%;
+  margin: auto; }
 
 .consent-box {
   margin-right: 1rem; }
