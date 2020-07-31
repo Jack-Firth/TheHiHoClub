@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/background_image.jpg");
+  height: 100vh; }
+
+.signup-container {
+  max-width: 960px;
+  border-radius: 20px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  padding: 40px;
+  color: #ffffff;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(8px);
+  text-align: center;
+  justify-content: center; }
+
+.singup-logo {
+  max-width: 60%; }
+
+.signup-title {
+  margin-top: 2rem;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 3rem; }
+
+.col-5 {
+  justify-content: center; }
+
+.small-logo-section {
+  display: flex;
+  justify-content: center; }
+  @media (max-width: 550px) {
+    .small-logo-section {
+      flex-direction: column; } }
+
+.row {
+  display: flex; }
+  @media (max-width: 550px) {
+    .row {
+      flex-direction: column;
+      display: inline-block;
+      text-align: -webkit-center; } }
+
+.small-logo {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: auto; }
+
+.description {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-family: "Yanone Kaffeesatz", sans-serif; }
+
+.newsletter-form {
+  margin-top: 1rem; }
+
+.btn-primary {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  background-color: #ffffff;
+  color: #32000a;
+  font: bolder;
+  border: none; }
+  .btn-primary:hover {
+    background-color: #ffd700;
+    color: #32000a; }
+
+.form-control {
+  background-color: #1b1b1b;
+  border: none;
+  color: #ffffff;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  max-width: 50%;
+  margin: auto; }
+
+.consent-box {
+  margin-right: 1rem; }
+
+.consent-message {
+  font-family: "Yanone Kaffeesatz", sans-serif; }
+
+.signup-card #success {
+  display: none; }
+
+.error {
+  display: none; }
+
+.errorAnim {
+  display: block; }
+
+.links-wrapper {
+  margin: auto;
+  max-width: 20%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25rem; }
+
+.social-link {
+  color: #ffffff;
+  text-decoration: none; }
+  .social-link:hover {
+    color: #ffd700;
+    transition: ease-in-out, 0.2s; }
+
+/*# sourceMappingURL=main.css.map */

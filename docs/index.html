@@ -7,8 +7,8 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <title>The Hi Ho Club</title>
-    <link rel="icon" type="image/png" href="assets/icon-16.png" />
-    <link rel="apple-touch-icon" type="image/png" href="assets/icon-16.png" />
+    <link rel="icon" type="image/png" href="assets/hiho-icon.png" />
+    <link rel="apple-touch-icon" type="image/png" href="assets/hiho-icon.png" />
     <link
       rel="stylesheet"
       href="bootstrap-4.5.0-dist/css/bootstrap-grid.min.css"
@@ -22,95 +22,94 @@
   </head>
 
   <body>
-    <div class="signup-container">
-      <div class="row">
-        <div class="col"></div>
-        <div class="col-md-10 col-sm-12">
-          <div class="row">
-            <div class="col-sm-12">
-              <img
-                src="assets/logo-large.png"
-                alt="Charlie's and The Hi Ho Club Logo"
-                class="singup-logo"
-              />
+    <div class="container">
+      <div class="inner">
+        <div class="left">
+          <div class="pane">
+            <div class="row">
+              <div class="col-12">
+                <img
+                  src="assets/logo-large.png"
+                  alt="Charlie's and The Hi Ho Club Logo"
+                  class="combined-logo"
+                />
+              </div>
+            </div>
+            <div div class="row">
+              <div class="col-md-5 col-sm-12">
+                <img
+                  src="assets/charlies-logo-white.png"
+                  alt="Charlie's Pizzeria Logo"
+                  class="small-logo"
+                />
+                <div class="description">
+                  Pizza <br />
+                  House Special Arancini <br />
+                  Sandwiches <br />
+                  Italian Pastries <br />
+                  LICC Gelato <br />
+                  Antipasti <br />
+                  Coffee <br />
+                </div>
+              </div>
+              <div class="col"></div>
+              <div class="col-md-5 col-sm-12">
+                <img
+                  src="assets/hiho-logo-white.png"
+                  alt="The Hi Ho Club Logo"
+                  class="small-logo"
+                />
+                <div class="description">
+                  Cocktails <br />
+                  Beers, Wines & Spirits <br />
+                  Liqueurs <br />
+                  Mezcal & Tequila <br />
+                  House Moonshine <br />
+                  Live Music & Events <br />
+                  Private VIP Drinking Rooms <br />
+                </div>
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col">
-              <div class="signup-card">
-                <h1 class="signup-title">COMING SOON!</h1>
-                <div class="small-logo-section">
-                  <div class="row">
-                    <div class="col-md-5 col-sm-12">
-                      <div class="logo-wrapper">
-                        <img
-                          src="assets/charlies-logo-white.png"
-                          alt="Charlie's Logo"
-                          class="small-logo"
-                        />
-                      </div>
-                      <div class="description">
-                        Pizza <br />
-                        House Special Arancini <br />
-                        Sandwiches <br />
-                        Italian Pastries <br />
-                        LICC Gelato <br />
-                        Antipasti <br />
-                        Coffee <br />
-                      </div>
-                    </div>
-                    <div class="col"></div>
-                    <div class="col-md-5 col-sm-12">
-                      <div class="logo-wrapper">
-                        <img
-                          src="assets/hiho-logo-white.png"
-                          alt="The Hi Ho Club Logo"
-                          class="small-logo"
-                        />
-                      </div>
-                      <div class="description">
-                        Cocktails <br />
-                        Beers, Wines & Spirits <br />
-                        Liqueurs <br />
-                        Mezcal & Tequila <br />
-                        House Moonshine <br />
-                        Live Music & Events <br />
-                        Private VIP Drinking Rooms <br />
-                      </div>
-                    </div>
-                  </div>
+        </div>
+        <div class="right">
+          <div class="pane">
+            <div class="row">
+              <div class="description">
+                For more information: <br />
+                <br />
+                Call: 01904 270101 <br />
+                Email: Enquiries@thehihoclub.com <br />
+                <br />
+                Become a member of our family here to see when we go live:
+                <br />
+              </div>
+              <form action="/subscribe" method="POST" class="mailing_list_form">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="contactForm-name"
+                    placeholder="Name"
+                    max-length="100"
+                    required
+                  />
                 </div>
-                <div class="row">
-                  <div class="col">
-                    <div class="description">
-                      For more information: <br />
-                      Call: 01904 270101 <br />
-                      Email: Enquiries@thehihoclub.com
-                    </div>
-                  </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="contactForm-email"
+                    placeholder="Email"
+                    max-length="150"
+                    required
+                  />
                 </div>
-                <form class="newsletter-form">
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="contactForm-name"
-                      placeholder="Name"
-                      max-length="100"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="contactForm-email"
-                      placeholder="Email"
-                      max-length="150"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
+                <div class="form-group">
+                  <div class="consent-wrapper">
+                    <label for="confirmation" class="consent-message">
+                      I consent to join the Hi Ho Club mailing list</label
+                    >
                     <input
                       class="consent-box"
                       type="checkbox"
@@ -119,43 +118,37 @@
                       value="True"
                       required
                     />
-                    <label for="confirmation" class="consent-message">
-                      I consent to join the Hi Ho Club mailing list</label
-                    ><br />
                   </div>
-                  <div class="form-group">
-                    <button
-                      type="submit"
-                      onclick="sendMessage()"
-                      class="btn btn-primary"
-                    >
-                      Become a Member
-                    </button>
-                  </div>
-                </form>
+                </div>
+                <p id="error" class="error">
+                  Please enter your name and email address
+                </p>
+                <div class="form-group">
+                  <input
+                    type="submit"
+                    value="Join us"
+                    id="cta"
+                    class="btn btn-primary"
+                  />
+                </div>
+              </form>
+              <div class="links-container">
                 <div class="row">
                   <div class="col">
                     <div class="links-wrapper">
-                      <div class="insta-wrapper">
-                        <a
-                          class="social-link"
-                          href="https://www.instagram.com/thehihoclub"
-                          target="_blank"
-                          ><i class="fa fa-instagram" aria-hidden="true"></i
-                        ></a>
-                      </div>
-                      <div class="facebook-wrapper">
-                        <a
-                          class="social-link"
-                          href="https://www.facebook.com/thehihoclub"
-                          target="_blank"
-                        >
-                          <i
-                            class="fa fa-facebook-square"
-                            aria-hidden="true"
-                          ></i
-                        ></a>
-                      </div>
+                      <a
+                        class="social-link"
+                        href="https://www.instagram.com/thehihoclub"
+                        target="_blank"
+                        ><i class="fa fa-instagram" aria-hidden="true"></i
+                      ></a>
+                      <a
+                        class="social-link"
+                        href="https://www.facebook.com/thehihoclub"
+                        target="_blank"
+                      >
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i
+                      ></a>
                     </div>
                   </div>
                 </div>
@@ -163,7 +156,6 @@
             </div>
           </div>
         </div>
-        <div class="col"></div>
       </div>
     </div>
   </body>

@@ -1,0 +1,43 @@
+.mailing_list_form
+    display: flex
+    flex-direction: column
+    margin: auto
+
+.form-group
+    display: flex  
+    justify-content: center
+
+.form-control
+    color: $primary-dark
+    background: rgba($white, 0.4)
+    border-color: $primary-dark
+    padding: 1rem
+    font-weight: 600
+
+.form-control::placeholder
+    color: $primary-dark
+
+.consent-wrapper
+    display: flex
+    flex-direction: column
+    .consent-box
+        margin: auto
+    .consent-message
+        font-size: $font-base
+        color: $white
+
+.error
+    display: none
+
+.btn-primary
+    font-family: $font-family-hiho
+    background-color: $white
+    color: $primary-dark
+    font: bolder
+    border: none
+    &:hover
+        background-color: $highlight-gold
+        color: $primary-dark
+        transition: ease-in-out, .5s
+        transform: scale(1.25)
+

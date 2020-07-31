@@ -1,3 +1,28 @@
 body
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url($body-background-image)
-    
+    background: $black
+    .container
+        width: 100vw
+        margin: 0
+        padding: 0
+        .inner
+            display: flex
+            width: 100vw
+            height: 100vh
+            margin: 0
+            padding: 0
+            .left
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url($left-body-background-image) 
+                -webkit-background-size: cover
+                -moz-background-size: cover
+                -o-background-size: cover
+                background-size: cover
+                width: 67%
+                padding: 7rem
+            .right
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url($right-body-background-image)
+                -webkit-background-size: cover
+                -moz-background-size: cover
+                -o-background-size: cover
+                background-size: cover
+                width: 33%
+                padding: 7rem

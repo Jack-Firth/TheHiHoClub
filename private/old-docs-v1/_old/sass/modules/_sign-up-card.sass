@@ -1,0 +1,101 @@
+.signup-container
+    max-width: 960px
+    border-radius: 20px
+    margin: auto   
+    background: rgba(0,0,0,0.3)
+    box-sizing: border-box
+    padding: 40px
+    color: $white
+    margin-top: 2rem
+    margin-bottom: 2rem
+    backdrop-filter: blur(8px)
+    text-align: center
+    justify-content: center
+
+.singup-logo
+    max-width: 60%
+
+.signup-title
+    margin-top: 2rem
+    font-family: $font-family-hiho
+    font-size: $font-logo
+
+.col-5
+    justify-content: center
+
+.small-logo-section
+    display: flex  
+    justify-content: center
+    @media ( max-width: 550px )
+        flex-direction: column
+
+.row
+    display: flex
+    @media (max-width: 550px)
+        flex-direction: column
+        display: inline-block
+        text-align: -webkit-center
+
+
+.small-logo
+    max-width: 100%
+    display: flex
+    justify-content: center
+    margin: auto
+
+.description
+    margin-bottom: 1rem
+    font-size: $font-large
+    font-family: $font-family-hiho
+
+.newsletter-form
+    margin-top: 1rem
+
+.btn-primary
+    font-family: $font-family-hiho
+    background-color: $white
+    color: $primary-dark
+    font: bolder
+    border: none
+    &:hover
+        background-color: $highlight-gold
+        color: $primary-dark
+
+.form-control
+    background-color: $btn-hiho
+    border: none
+    color: $white
+    font-family: $font-family-hiho
+    max-width: 50%
+    margin: auto
+
+.consent-box
+    margin-right: 1rem
+
+.consent-message
+    font-family: $font-family-hiho    
+
+.signup-card
+    #success
+        display: none
+    
+.error
+    display: none
+
+.errorAnim
+    display: block
+
+.links-wrapper
+    margin: auto
+    max-width: 20%
+    margin-top: 1rem
+    display: flex
+    justify-content: space-between
+    font-size: $font-large
+
+.social-link
+    color: $white
+    text-decoration: none
+    &:hover
+        color: $highlight-gold
+        transition: ease-in-out, 0.2s

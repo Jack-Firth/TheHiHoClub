@@ -1,98 +1,112 @@
-@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/background_image.jpg"); }
+  background: #000000; }
+  body .container {
+    width: 100vw;
+    margin: 0;
+    padding: 0; }
+    body .container .inner {
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+      padding: 0; }
+      body .container .inner .left {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/left-background-image.png");
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 67%;
+        padding: 7rem; }
+      body .container .inner .right {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/right-background-image.png");
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 33%;
+        padding: 7rem; }
 
-.signup-container {
-  max-width: 960px;
-  border-radius: 20px;
-  margin: auto;
-  background: rgba(0, 0, 0, 0.3);
-  box-sizing: border-box;
-  padding: 40px;
-  color: #ffffff;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.pane {
+  background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(8px);
-  text-align: center;
-  justify-content: center; }
-
-.singup-logo {
-  max-width: 60%; }
-
-.signup-title {
-  margin-top: 2rem;
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  font-size: 3rem; }
-
-.col-5 {
-  justify-content: center; }
-
-.small-logo-section {
+  border-radius: 20px;
+  padding: 5rem 2rem;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
   display: flex;
-  justify-content: center; }
-  @media (max-width: 550px) {
-    .small-logo-section {
-      flex-direction: column; } }
+  flex-direction: column;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Roboto Slab", serif; }
 
 .row {
-  display: flex; }
-  @media (max-width: 550px) {
-    .row {
-      flex-direction: column;
-      display: inline-block;
-      text-align: -webkit-center; } }
-
-.small-logo {
   max-width: 100%;
+  display: flex; }
+  .row .description {
+    margin-bottom: 2rem;
+    font-size: 1.25rem; }
+
+.mailing_list_form {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   margin: auto; }
 
-.description {
-  margin-bottom: 1rem;
-  font-size: 1.25rem;
-  font-family: "Caveat", cursive; }
+.form-group {
+  display: flex;
+  justify-content: center; }
 
-.newsletter-form {
-  margin-top: 1rem; }
+.form-control {
+  color: #32000a;
+  background: rgba(255, 255, 255, 0.4);
+  border-color: #32000a;
+  padding: 1rem;
+  font-weight: 600; }
+
+.form-control::placeholder {
+  color: #32000a; }
+
+.consent-wrapper {
+  display: flex;
+  flex-direction: column; }
+  .consent-wrapper .consent-box {
+    margin: auto; }
+  .consent-wrapper .consent-message {
+    font-size: 1rem;
+    color: #ffffff; }
+
+.error {
+  display: none; }
 
 .btn-primary {
+  font-family: "Roboto Slab", serif;
   background-color: #ffffff;
   color: #32000a;
   font: bolder;
   border: none; }
   .btn-primary:hover {
     background-color: #ffd700;
-    color: #32000a; }
+    color: #32000a;
+    transition: ease-in-out, 0.5s;
+    transform: scale(1.25); }
 
-.form-control {
-  background-color: #1b1b1b;
-  border: none;
-  text-color: #ffffff;
-  font-family: "Caveat", cursive;
-  max-width: 50%;
-  margin: auto; }
-
-.consent-box {
-  margin-right: 1rem; }
-
-.consent-message {
-  font-family: "Caveat", cursive; }
-
-.links-wrapper {
-  margin: auto;
-  max-width: 20%;
-  margin-top: 1rem;
+.links-container {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  font-size: 1.25rem; }
-
-.social-link {
-  color: #ffffff;
-  text-decoration: none; }
-  .social-link:hover {
-    color: #ffd700;
-    transition: ease-in-out, 0.2s; }
+  justify-content: center; }
+  .links-container .links-wrapper {
+    display: flex;
+    margin: auto; }
+    .links-container .links-wrapper .social-link {
+      margin: 1rem;
+      font-size: 1.5rem;
+      color: #ffffff; }
+      .links-container .links-wrapper .social-link:hover {
+        color: #ffd700;
+        transition: ease-in-out, 0.5s;
+        transform: scale(1.5); }
 
 /*# sourceMappingURL=main.css.map */
