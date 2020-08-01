@@ -11,6 +11,10 @@ body {
       height: 100vh;
       margin: 0;
       padding: 0; }
+      @media (max-width: 1720px) {
+        body .container .inner {
+          flex-direction: column;
+          justify-content: center; } }
       body .container .inner .left {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/left-background-image.png");
         -webkit-background-size: cover;
@@ -19,6 +23,14 @@ body {
         background-size: cover;
         width: 67%;
         padding: 7rem; }
+        @media (max-width: 1720px) {
+          body .container .inner .left {
+            width: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/background-vertical.jpg");
+            margin-top: 50rem; } }
+        @media (max-width: 768px) {
+          body .container .inner .left {
+            padding: 0; } }
       body .container .inner .right {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/right-background-image.png");
         -webkit-background-size: cover;
@@ -27,6 +39,13 @@ body {
         background-size: cover;
         width: 33%;
         padding: 7rem; }
+        @media (max-width: 1720px) {
+          body .container .inner .right {
+            width: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/background-vertical-2.jpg"); } }
+        @media (max-width: 768px) {
+          body .container .inner .right {
+            padding: 0; } }
 
 .pane {
   background: rgba(0, 0, 0, 0.4);
@@ -49,6 +68,23 @@ body {
   .row .description {
     margin-bottom: 2rem;
     font-size: 1.25rem; }
+
+.right .row .description {
+  display: flex;
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 1rem; }
+
+.logo-wrapper {
+  max-width: 90%;
+  display: flex;
+  margin: auto;
+  justify-content: center; }
+  .logo-wrapper .combined-logo {
+    max-width: 75%; }
+
+.signup {
+  margin: auto; }
 
 .mailing_list_form {
   display: flex;
@@ -78,7 +114,13 @@ body {
     font-size: 1rem;
     color: #ffffff; }
 
-.error {
+.right .error {
+  display: none; }
+
+.errorAnim {
+  display: flex; }
+
+.right #success {
   display: none; }
 
 .btn-primary {
@@ -90,9 +132,30 @@ body {
   .btn-primary:hover {
     background-color: #ffd700;
     color: #32000a;
-    transition: ease-in-out, 0.5s;
-    transform: scale(1.25); }
+    transition: ease-in-out, 0.2s;
+    transform: scale(1.1); }
 
+.fadeout {
+  opacity: 1;
+  animation: fadeout 1s forwards; }
+
+.fadein {
+  animation: fadein 1s forwards;
+  display: block !important;
+  position: absolute; }
+
+@keyframes fadeout {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes fadein {
+  0% {
+    display: block;
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    display: block; } }
 .links-container {
   width: 100%;
   display: flex;
@@ -106,7 +169,7 @@ body {
       color: #ffffff; }
       .links-container .links-wrapper .social-link:hover {
         color: #ffd700;
-        transition: ease-in-out, 0.5s;
-        transform: scale(1.5); }
+        transition: ease-in-out, 0.2s;
+        transform: scale(1.2); }
 
 /*# sourceMappingURL=main.css.map */

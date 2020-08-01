@@ -1,5 +1,10 @@
 {
     "cSpell.words": [
         "topnav"
+    ],
+    "cSpell.ignoreWords": [
+        "crossorigin",
+        "fadein",
+        "signup"
     ]
 }

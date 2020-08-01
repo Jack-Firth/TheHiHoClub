@@ -1,3 +1,7 @@
+// display none when confirm
+.signup
+    margin: auto
+
 .mailing_list_form
     display: flex
     flex-direction: column
@@ -26,7 +30,14 @@
         font-size: $font-base
         color: $white
 
-.error
+.right 
+    .error
+        display: none
+
+.errorAnim
+    display: flex
+
+.right #success
     display: none
 
 .btn-primary
@@ -38,6 +49,28 @@
     &:hover
         background-color: $highlight-gold
         color: $primary-dark
-        transition: ease-in-out, .5s
-        transform: scale(1.25)
+        transition: ease-in-out, .2s
+        transform: scale(1.1)
 
+.fadeout
+    opacity: 1
+    animation: fadeout 1s forwards
+
+.fadein
+    animation: fadein 1s forwards
+    display: block !important
+    position: absolute
+
+@keyframes fadeout
+    0%
+        opacity: 1
+    100%
+        opacity: 0
+
+@keyframes fadein
+    0%
+        display: block
+        opacity: 0
+    100%
+        opacity: 1
+        display: block
