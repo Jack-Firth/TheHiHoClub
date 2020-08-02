@@ -59,56 +59,59 @@
       <div class="right">
         <div class="pane">
           <div class="row">
-            <div class="col">
-              <div id="description" class="description">
-                For more information: <br />
-                <br />
-                Call: 01904 270101 <br />
-                Email: Enquiries@thehihoclub.com <br />
-                <br />
-                Become a member of our family here to see when we go live:
-                <br />
-              </div>
-              <div id="signup" class="signup">
-                <form action="/subscribe" method="POST" class="mailing_list_form">
-                  <div class="form-group">
-                    <input type="text" class="form-control" id="firstName" placeholder="Name" max-length="100"
-                      required />
-                  </div>
-                  <div class="form-group">
-                    <input type="email" class="form-control" id="email" placeholder="Email" max-length="150" required />
-                  </div>
-                  <div class="form-group">
-                    <div class="consent-wrapper">
-                      <label for="confirmationBox" class="consent-message">
-                        I consent to join the Hi Ho Club mailing list</label>
-                      <input class="consent-box" type="checkbox" id="confirmationBox" name="confirmation" value="True"
+            <div class="col-12">
+              <div class="right-wrapper">
+                <div id="description" class="description">
+                  For more information: <br />
+                  <br />
+                  Call: 01904 270101 <br />
+                  Email: Enquiries@thehihoclub.com <br />
+                  <br />
+                  Become a member of our family here to see when we go live:
+                  <br />
+                </div>
+                <div id="signup" class="signup">
+                  <form action="/subscribe" method="POST" class="mailing_list_form">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="firstName" placeholder="Name" max-length="100"
                         required />
                     </div>
-                  </div>
-                  <p id="error" class="error">
-                    Please enter your name and email address
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="email" placeholder="Email" max-length="150"
+                        required />
+                    </div>
+                    <div class="form-group">
+                      <div class="consent-wrapper">
+                        <label for="confirmationBox" class="consent-message">
+                          I consent to join the Hi Ho Club mailing list</label>
+                        <input class="consent-box" type="checkbox" id="confirmationBox" name="confirmation" value="True"
+                          required />
+                      </div>
+                    </div>
+                    <p id="error" class="error">
+                      Please enter your name and email address
+                    </p>
+                    <div class="form-group">
+                      <input type="submit" value="Join us" id="cta" class="btn btn-primary" />
+                    </div>
+                  </form>
+                </div>
+                <div id="success" class="success description">
+                  <h2>Confirm your email!</h2>
+                  <p>
+                    Please confirm your email address so we can notify you when we
+                    go live!
                   </p>
-                  <div class="form-group">
-                    <input type="submit" value="Join us" id="cta" class="btn btn-primary" />
-                  </div>
-                </form>
-              </div>
-              <div id="success" class="success description">
-                <h2>Confirm your email!</h2>
-                <p>
-                  Please confirm your email address so we can notify you when we
-                  go live!
-                </p>
-              </div>
-              <div class="links-container">
-                <div class="row">
-                  <div class="col">
-                    <div class="links-wrapper">
-                      <a class="social-link" href="https://www.instagram.com/thehihoclub" target="_blank"><i
-                          class="fa fa-instagram" aria-hidden="true"></i></a>
-                      <a class="social-link" href="https://www.facebook.com/thehihoclub" target="_blank">
-                        <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                </div>
+                <div class="links-container">
+                  <div class="row">
+                    <div class="col">
+                      <div class="links-wrapper">
+                        <a class="social-link" href="https://www.instagram.com/thehihoclub" target="_blank"><i
+                            class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a class="social-link" href="https://www.facebook.com/thehihoclub" target="_blank">
+                          <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -119,7 +122,6 @@
       </div>
     </div>
   </div>
-
   <script>
 
     // Form Submission
