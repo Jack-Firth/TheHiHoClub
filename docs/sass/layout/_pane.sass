@@ -25,10 +25,19 @@
     .row
         .description
             display: flex
+            flex-direction: column
             max-width: 80%
             margin-bottom: 1rem
+            line-height: 1.25rem
             @media (max-width: 768px)
                 font-size: $font-base
+            .phone-number
+                margin-top: 2rem
+                margin-bottom: .5rem
+            .email
+                margin-bottom: 2rem
+            .join-us-message
+                margin-bottom: 1rem
 .logo-wrapper
     max-width: 90%
     display: flex
@@ -36,3 +45,7 @@
     justify-content: center
     .combined-logo
         max-width: 75%
+
+ul
+    list-style: none
+    padding: 0

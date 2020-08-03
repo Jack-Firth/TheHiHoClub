@@ -73,11 +73,20 @@ body {
 
 .right .row .description {
   display: flex;
+  flex-direction: column;
   max-width: 80%;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  line-height: 1.25rem; }
   @media (max-width: 768px) {
     .right .row .description {
       font-size: 1rem; } }
+  .right .row .description .phone-number {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem; }
+  .right .row .description .email {
+    margin-bottom: 2rem; }
+  .right .row .description .join-us-message {
+    margin-bottom: 1rem; }
 
 .logo-wrapper {
   max-width: 90%;
@@ -86,6 +95,10 @@ body {
   justify-content: center; }
   .logo-wrapper .combined-logo {
     max-width: 75%; }
+
+ul {
+  list-style: none;
+  padding: 0; }
 
 .signup {
   margin: auto; }
