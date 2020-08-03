@@ -3,6 +3,7 @@ body {
   background: #000000; }
   body .container {
     width: 100vw;
+    max-width: 100%;
     margin: 0;
     padding: 0; }
     body .container .inner {
@@ -14,7 +15,8 @@ body {
       @media (max-width: 1720px) {
         body .container .inner {
           flex-direction: column;
-          justify-content: center; } }
+          justify-content: center;
+          height: 100%; } }
       body .container .inner .left {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/left-background-image.png");
         -webkit-background-size: cover;
@@ -26,8 +28,7 @@ body {
         @media (max-width: 1720px) {
           body .container .inner .left {
             width: 100%;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/background-vertical.jpg");
-            margin-top: 70rem; } }
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/background-vertical.jpg"); } }
         @media (max-width: 768px) {
           body .container .inner .left {
             padding: 0; } }
@@ -67,7 +68,8 @@ body {
   display: flex; }
   .row .description {
     margin-bottom: 2rem;
-    font-size: 1.25rem; }
+    font-size: 1.25rem;
+    justify-content: center; }
 
 .right .row .description {
   display: flex;
@@ -88,7 +90,8 @@ body {
 .mailing_list_form {
   display: flex;
   flex-direction: column;
-  margin: auto; }
+  margin: auto;
+  align-items: center; }
 
 .form-group {
   display: flex;
@@ -114,6 +117,12 @@ body {
     font-size: 1rem;
     color: #ffffff; }
 
+.right .right-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
 .right .error {
   display: none; }
 
