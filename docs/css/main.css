@@ -82,11 +82,14 @@ body {
       font-size: 1rem; } }
   .right .row .description .phone-number {
     margin-top: 2rem;
-    margin-bottom: 0.5rem; }
+    margin-bottom: 0.5rem;
+    align-self: center; }
   .right .row .description .email {
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    align-self: center; }
   .right .row .description .join-us-message {
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    display: none; }
 
 .logo-wrapper {
   max-width: 90%;
@@ -101,7 +104,8 @@ ul {
   padding: 0; }
 
 .signup {
-  margin: auto; }
+  margin: auto;
+  display: none; }
 
 .mailing_list_form {
   display: flex;
